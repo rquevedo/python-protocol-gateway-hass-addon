@@ -1,0 +1,16 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: Python Protocol Gateway
+version: 1.1.6
+slug: python-protocol-gateway
+url: "https://github.com/felipecrs/python-protocol-gateway-hass-addon/tree/master/python-protocol-gateway"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+startup: services
+init: true
+uart: true
+map:
+  - config:rw
