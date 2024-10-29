@@ -3,8 +3,11 @@
 set -ex
 
 mkdir -p /config/python-protocol-gateway
-cd /config/python-protocol-gateway
 
-export PYTHONUNBUFFERED=1
+if [[ ! -f /config/python-protocol-gateway/config.cfg ]]; then
+    cp -f config.cfg.example /config/python-protocol-gateway/config.cfg
+fi
 
-exec python3 /app/protocol_gateway.py
+ln -svf /config/python-protocol-gateway/config.cfg config.cfg
+
+exec python3 -u protocol_gateway.py
