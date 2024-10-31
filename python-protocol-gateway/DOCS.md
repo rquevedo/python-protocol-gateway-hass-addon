@@ -19,5 +19,9 @@ Follow these steps to get the add-on installed on your system:
 
 ## Using
 
-1. Create a config file at `/config/python-protocol-gateway/config.cfg`, you can use [config.cfg.example](https://github.com/HotNoob/PythonProtocolGateway/blob/main/config.cfg.example) as a template.
+1. Start the add-on, it will initialize an example configuration file in `/config/python-protocol-gateway/config.cfg` if the file does not exist already.
+1. Edit the configuration file to match your needs.
+1. You can also add any other files or directories you need to `/config/python-protocol-gateway`. It will be merged with the add-on's app directory during startup. Examples:
+   - `/config/python-protocol-gateway/protocols/srne/srne_v1.7.holding_registry_map.custom.csv`
+   - `/config/python-protocol-gateway/protocols/srne/srne_v1.7.holding_registry_map.override.csv`
 1. Start the add-on.
