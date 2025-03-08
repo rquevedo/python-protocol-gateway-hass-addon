@@ -1,4 +1,4 @@
-FROM python:3.12-alpine
+FROM 192.168.1.109:5000/python:3.12-alpine
 
 RUN apk add --no-cache bash rsync
 SHELL ["/bin/bash", "-euxo", "pipefail", "-c"]
