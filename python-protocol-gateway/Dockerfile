@@ -1,4 +1,4 @@
-FROM 192.168.1.109:5000/python:3.12-alpine
+FROM registry.ferialike.com/python:3.12-alpine
 
 RUN apk add --no-cache bash rsync
 SHELL ["/bin/bash", "-euxo", "pipefail", "-c"]
