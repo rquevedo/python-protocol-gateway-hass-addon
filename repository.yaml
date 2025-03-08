@@ -1,4 +1,4 @@
 # https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
 name: Python Protocol Gateway Home Assistant add-on repository
-url: https://github.com/felipecrs/python-protocol-gateway-hass-addon
+url: https://github.com/rquevedo/python-protocol-gateway-hass-addon
 maintainer: Felipe Santos <felipecassiors@gmail.com>
